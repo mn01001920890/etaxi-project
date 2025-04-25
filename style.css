@@ -1,0 +1,55 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #007bff; /* خلفية زرقاء */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #queueTable th,
+  #queueTable td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #queueTable {
+    min-width: 100%;
+    font-size: 14px;
+  }
+
+  #queueContainer {
+    padding: 10px;
+  }
+}
+

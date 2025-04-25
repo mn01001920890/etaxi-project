@@ -1,0 +1,43 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eTaxi Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="phone" placeholder="رقم الجوال" required />
+      <input type="password" id="password" placeholder="كلمة المرور" required />
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+    <div id="error" class="error-message"></div>
+  </div>
+
+  <script src="login.js"></script>
+  
+  <script>
+  // 🔒 منع كليك يمين
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 🔒 منع مفاتيح الأدوات المشهورة للمطورين
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I أو Ctrl + Shift + J أو Ctrl + U
+    if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+        (e.ctrlKey && e.key === 'U')) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>
