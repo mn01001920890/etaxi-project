@@ -7,13 +7,15 @@
   <script defer src="payments.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4ff;
-      display: flex;
-      min-height: 100vh;
-    }
+	    body {
+	  margin: 0;
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	  background-color: #f0f4ff;
+	  display: flex;
+	  min-height: 100vh;
+	  flex-wrap: wrap;
+	  overflow-x: hidden;
+		}
     .side-bar {
       width: 300px;
       background-color: #2554C7;
@@ -63,10 +65,11 @@
       border: none;
       font-size: 14px;
     }
-    .main-content {
-      flex: 1;
-      padding: 15px 25px;
-    }
+		.main-content {
+		  flex: 1;
+		  padding: 15px 25px;
+		  min-width: 0;
+		           }
     #paymentsContainer {
       overflow-x: auto;
       background-color: white;
@@ -78,8 +81,8 @@
     #paymentsTable {
       width: 100%;
       border-collapse: collapse;
-      min-width: 1000px;
-    }
+	    min-width: 100%;
+     }
     #paymentsTable thead th {
 	  background-color: #1f4694;
 	  color: white;
