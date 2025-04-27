@@ -165,6 +165,8 @@
       <input type="date" id="startDate" placeholder="من تاريخ">
       <input type="date" id="endDate" placeholder="إلى تاريخ">
       <button id="filterButton">🔎 اصدر بحث</button>
+	    <!-- رسالة انتظار -->
+            <div class="empty-message" id="emptyMessage" style="display:none; margin-top: 20px; text-align: center; font-size: 18px;">انتظر جاري احضار البيانات...</div>
     </div>
   </div>
 
@@ -200,8 +202,7 @@
       <!-- ✅ مكان أزرار التنقل -->
       <div id="paginationControls" style="margin-top: 20px; text-align: center;"></div>
 
-      <!-- رسالة انتظار -->
-      <div class="empty-message" id="emptyMessage" style="display:none; margin-top: 20px; text-align: center; font-size: 18px;">انتظر جاري احضار البيانات...</div>
+      
     </div>
   </div>
  <script>
