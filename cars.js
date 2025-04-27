@@ -11,6 +11,8 @@ function fetchCarsData(dateFrom = '', dateTo = '') {
     alert('يرجى تسجيل الدخول أولاً');
     return;
   }
+ // ✅ أول شيء نظهر رسالة التحميل
+  document.getElementById('emptyMessage').style.display = 'block';
  
 let url = 'https://api.etaxi.sa.com/portal/api/v1/live_queue_actions?page_number=0&page_size=1500&area_id=1';
 
