@@ -38,12 +38,16 @@ let url = 'https://api.etaxi.sa.com/portal/api/v1/live_queue_actions?page_number
         allCarsData = data.results;   // تخزين النتائج
         currentPage = 1;              // ارجاع إلى الصفحة الأولى
         renderCarsPage(currentPage);  // عرض الصفحة الأولى
+	document.getElementById('emptyMessage').style.display = 'none'; // ✅ نخفي رسالة التحميل بعد عرض البيانات
+
       } else {
         displayEmptyMessage();
       }
     })
     .catch(error => {
       alert('خطأ في الشبكة: ' + error.message);
+	  document.getElementById('emptyMessage').style.display = 'none'; // ✅ في حالة الخطأ برضو نخفي الرسالة
+
     });
 }
 
